@@ -31,6 +31,5 @@ for score in scores_str:
 
 average_score = total_score / len(scores_str)
 
-print(fail_count)
 print(average_score)
 
