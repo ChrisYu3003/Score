@@ -7,9 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1zwX1TOc-4s8hkH7R901O2j86vX392xeQ
 """
 
-Score=input().split()
-count=0
-for i in Score:
-  if int(i)<60:
-    count+=1
-print(count)
+scores_str = input().split()
+fail_count = 0
+
+scores_int = [int(score) for score in scores_str]
+
+for num in scores_int:
+    if num < 60:
+        fail_count += 1
+
+print(fail_count)
+print(max(scores_int))
+print(min(scores_int))
