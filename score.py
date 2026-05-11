@@ -9,6 +9,16 @@ Original file is located at
 
 scores_str = input().split()
 fail_count = 0
+
+scores_int = [int(score) for score in scores_str]
+
+for num in scores_int:
+    if num < 60:
+        fail_count += 1
+
+print(fail_count)
+print(max(scores_int))
+print(min(scores_int))
 total_score = 0
 
 for score in scores_str:
